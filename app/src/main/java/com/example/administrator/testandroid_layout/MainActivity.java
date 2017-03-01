@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
     private static String text;
@@ -25,5 +26,6 @@ public class MainActivity extends Activity {
     {
         text=et.getText().toString();
         tv.setText(text);
+        Toast.makeText(this,text,Toast.LENGTH_LONG).show();
     }
 }
